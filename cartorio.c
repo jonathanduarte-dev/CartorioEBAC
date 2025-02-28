@@ -120,7 +120,7 @@ int main()// O "()" (parênteses) determina que isso é uma FUNÇÃO
         printf("\t1 - Registrar nomes\n"); // O comando "\t" serve para espaçar a linha e o "\n" para pular linha
         printf("\t2 - Consultar nomes\n");
         printf("\t3 - Deletar nomes\n\n");
-        printf("Opção: "); // fim do menu
+        printf("\t4 - Sair do sistema\n\n");
     
         scanf("%d", &opcao); // o comando "scanf" serve para escanear a variável inserida, e a "%d" serve para puxar as variáveis do tipo inteiro.
     
@@ -141,6 +141,11 @@ int main()// O "()" (parênteses) determina que isso é uma FUNÇÃO
                 deletar();
                 break; 
             
+            case 4:
+                printf("Obrigado por utilizar o sistema!\n\n");
+                return 0;
+                break;
+                
             default: 
                 printf("Essa opção não está disponível. Reinicie o programa e volte para o Menu.\n");
                 system("read -p 'Pressione Enter para continuar...' var"); // Alteração para Linux
